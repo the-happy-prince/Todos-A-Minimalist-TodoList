@@ -1,0 +1,125 @@
+body{
+    background-color: rgb(247, 247, 252);
+}
+
+#mode {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#heading{
+    color: rgba(57, 190, 252, 0.959);
+    text-align: center;
+    font-size:90px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 2px 5px rgb(56, 56, 56);
+}
+
+#heading2{
+    text-align: center;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container{
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    padding-top: 10px;
+}
+
+#taskContainer{
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+#iptask{
+    padding: 10px;
+    border: 0;
+    width: 100%;
+    place-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+#iptask:hover{
+    box-shadow: 0 0 15px 4px rgba(4, 172, 214, 0.815);
+}
+
+#iptask:focus{
+    outline: none;
+}
+
+#todolist li{
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#pendingTasks {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+
+#completedTaskContainer {
+    background-color: #fff;
+    color: rgb(66, 65, 65);
+    text-decoration: line-through rgba(5, 165, 240, 0.719);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: 0;
+    margin-bottom: 20px;
+    box-shadow: 10px 0 15px 4px rgba(0,0,0,0.06);
+}
+
+#clear{
+    background-color: rgba(57, 190, 252, 0.959);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding-top: 5px;
+    padding-bottom: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: relative;
+    float: right;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+#clear:hover{
+    background-color: rgba(4, 172, 214, 0.815);
+    transition: 0.5s;
+}
+
+#moon {
+    background-color: rgb(247, 247, 252);
+    border: 0;
+}
+
+#sun {
+    border: 0;
+    color:rgb(252, 189, 55);
+    background-color: rgb(41, 41, 41);
+}
+
+::-webkit-input-placeholder {
+    color: rgba(216, 216, 216, 0.651);
+ }
+ :-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
+    color: rgba(216, 216, 216, 0.651);  
+ }
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: rgba(216, 216, 216, 0.651);  
+ }
+ :-ms-input-placeholder {  
+    color: rgba(216, 216, 216, 0.651);  
+ }

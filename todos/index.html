@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8cbece7662.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/nolan/50/todo-list.png" type="image/x-icon">  
+    <title>Make Your Todo List</title>
+</head>
+<body id="bd" onload="startUp()">
+    <h1 id="heading">todos</h1>
+    <div id="mode">
+        <button id="moon" onclick="darkMode();"><i class="fas fa-moon" style="font-size: 32px;"></i></button>
+        <button id="sun" onclick="lightMode();"><i class="fas fa-sun" style="font-size: 32px;"></i></button>
+    </div>
+    <div id="container">
+        <input type="text" id="iptask" placeholder="Enter your task">
+        <div id="taskContainer">
+            <ul id="todolist">
+                <!-- Data comes from the local storage -->
+            </ul>
+        </div>
+        <p id="pendingTasks"></p>
+        <hr>
+        <h2 id="heading2">Completed Tasks</h2>
+        <div id="completedTaskContainer">
+            <ul id="completedtodolist">
+                <!-- Data comes from the local storage -->
+            </ul>
+            <button type="reset" id="clear" onclick="clearCompletedTasks()">Clear Data</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
